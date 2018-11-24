@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="us">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI Example Page</title>
+    <link href="jquery-ui.css" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+</head>
+<body>
+
+<div align="center">
+    <h2 class="demoHeaders">输入框联想功能</h2>
+    <div>
+        <input id="autocomplete" title="type &quot;a&quot;">
+    </div>
+</div>
+
+<script>
+
+    $("#accordion").accordion();
+
+    var availableTags = [
+        "卢造发",
+        "卢造发1",
+        "卢造发2",
+        "卢造发3",
+        "卢造发4",
+        "卢造发5"
+    ];
+    $("#autocomplete").autocomplete({
+        source: availableTags
+    });
+
+</script>
+</body>
+</html>
